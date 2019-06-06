@@ -1,0 +1,692 @@
+@font-face {
+  src: url(../fonts/ARIALMT.ttf);
+  font-family: 'ARIAL-MT';
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'ARIAL-MT', sans-serif;
+  color: #000;
+}
+body * {
+  box-sizing: border-box;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  width: auto;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.banner-slider-bg {
+  padding: 300px 0 110px;
+  background-size: cover;
+}
+
+.bg-1 {
+  background: url(../images/banner-bg.jpg) center center no-repeat;
+}
+
+.bg-2 {
+  background: url(../images/banner-bg1.jpg) center center no-repeat;
+}
+
+.bg-3 {
+  background: url(../images/banner-bg2.jpg) center center no-repeat;
+}
+
+.bg-4 {
+  background: url(../images/banner-bg3.jpg) center center no-repeat;
+}
+
+.banner-slider-item {
+  padding: 45px 60px 45px 0;
+  padding-left: 8%;
+  background-color: rgba(25,119,165,.6);
+}
+
+.banner-slider-name {
+  margin: 0 0 20px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.banner-slider-btn {
+  padding: 16px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fbd341;
+  cursor: pointer;
+}
+
+.banner-slider-btn:hover {
+  background: #fff;
+}
+
+.slick-dots {
+  bottom: 26px;
+  padding-left: 10%;
+  text-align: left;
+}
+
+.slick-dots li button:before {
+  font-size: 15px;
+  opacity: .5;
+  color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #fbd341;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.header-container {
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 6px;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu-contact {
+  padding-left: 80px;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  color: #f3f3f3;
+  font-size: 14px;
+}
+
+.nav-menu-contact-item {
+  display: flex;
+  align-items: center;
+  margin-right: 65px;
+}
+
+.nav-menu-contact-item img {
+  margin-right: 4px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  width: 700px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fbd341;
+}
+
+.menu-link {
+  padding: 7px 0;
+  display: inline-block;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+
+.menu-link:hover {
+  color: #fff;
+}
+
+.dropdown-menu {
+  position: relative;
+}
+
+.dropdown-menu:hover .submenu {
+  display: block;
+}
+
+.dropdown-menu-arrow {
+  display: inline-block;
+  margin-left: 4px;
+  height: 8px;
+  width: 16px;
+  background: url(../images/arrow-2-black.png) no-repeat;
+}
+
+.submenu {
+  position: absolute;
+  top: 38px;
+  left: -24px;
+  display: none;
+  padding: 25px 30px 18px 28px;
+  background-color: rgba(51,151,226,.8);
+}
+
+.submenu-one {
+  width: 186px;
+}
+
+.submenu-two {
+  width: 234px;
+}
+
+.submenu-link {
+  font-size: 14px;
+  color: #fff;
+  line-height: 33px;
+}
+
+.submenu-link:hover {
+  color: #fbd341;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.our-tours {
+  font-size: 20px;
+  margin: 70px 0 0;
+}
+
+.our-tours-default {
+  color: #fbd341;
+  margin-right: 32px;
+}
+
+.slider-container {
+  width: 100%;
+  padding: 74px;
+}
+
+.slick-prev {
+  left: 20px;
+  background: url(../images/slick-prev.png) center center no-repeat;
+  z-index: 3;
+}
+
+.slick-next {
+  right: 20px;
+  background: url(../images/slick-next.png) center center no-repeat;
+  z-index: 3;
+}
+
+.slick-prev:before, .slick-next:before {
+  opacity: 0;
+  color: transparent;
+}
+
+.slick-next:hover, .slick-next:focus {
+  background: url(../images/slick-next.png) center center no-repeat;
+}
+
+.slick-prev:hover, .slick-prev:focus {
+  background: url(../images/slick-prev.png) center center no-repeat;
+}
+
+.slider-box {
+  margin: 0 32px;
+  padding: 14px;
+  background-color: #f8f7f7;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.slider-img {
+  float: left;
+  margin-right: 20px;
+}
+
+.slider-text {
+  position: relative;
+  padding-left: 206px;
+  font-size: 14px;
+  color: #3a3a3a;
+}
+
+.slider-text-name {
+  margin: 12px 0 0;
+  font-size: 17px;
+}
+
+.slider-line {
+  display: block; 
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid #6a6a6a;
+}  
+
+.slider-price {
+  font-size: 20px;
+  color: #000;
+}
+
+.slider-price-default {
+  margin-left: 8px;
+  color: #8a8a8a;
+}
+
+.slider-link {
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+}
+
+.our-advantages {
+  padding: 44px 0 75px;
+  background-color: #f8f7f7;
+}
+
+.advantages-container {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-text {
+  width: 60%;
+  padding: 54px 0 46px 90px;
+}
+
+.form-bg {
+  color: #fff;
+  padding: 40px 0;
+  background: url(../images/form-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.form-name {
+  margin-top: 0;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 40px 36px;
+  background-color: rgba(0,0,0,.6);
+}
+
+.form-column input {
+  width: 150px;
+  padding-left: 12px;
+  font-size: 18px;
+  color: #e5e5e5;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,.6);
+}
+
+.form-column input::placeholder {
+  color: #e5e5e5;
+}
+
+#country {
+  width: 150px;
+  padding-left: 12px;
+  font-size: 18px;
+  color: #e5e5e5;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,.6);
+}
+
+.country-default {
+  color: #000;
+}
+
+.form-btn {
+  width: 254px;
+  height: 48px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: #fbd341;
+  border: none;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background: #fff;
+}
+
+.footer {
+  font-size: 14px;
+  color: #fff;
+  padding: 50px 0 25px 0;
+  background-color: #22334d;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-name {
+  font-size: 18px;
+}
+
+.footer-info {
+  width: 300px;
+}
+
+.footer-info-link {
+  display: flex;
+  align-items: center;
+  color: #c2c2c2;
+}
+
+.footer-info-link:hover,
+.footer-nav a:hover {
+  color: #fbd341;
+}
+
+.footer-info-link img {
+  margin-left: 5px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav a {
+  margin: 6px 0;
+  color: #fff;
+}
+
+.footer-line { 
+  display: block; 
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid #f7f8f9;
+  margin: 28px 0 24px 0; 
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact-item img {
+  margin-right: 8px;
+}
+
+.footer-contact-line {
+  margin: 20px 0; 
+}
+
+.link-fb {
+  margin-right: 24px;
+}
+
+.content {
+  min-height: calc(100vh - 339px);
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 100%;
+    padding: 0 24px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .banner-slider-name {
+    line-height: 34px;
+  }
+
+  .menu {
+    width: 628px;
+  }
+
+  .banner-slider-item {
+    padding-left: 2%;
+  }
+
+  .slick-dots {
+    padding-left: 2%;
+  }
+
+  .our-tours {
+    margin: 35px 0 0;
+  }
+
+  .banner-slider-bg {
+    padding: 275px 0 90px;
+  }
+
+  .slider-container {
+    padding: 40px 74px;
+  }
+
+  .advantages-text {
+    width: 70%;
+    height: 234px;
+    padding: 18px;
+    overflow: auto;
+  }
+
+  .form-container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .form-btn {
+    width: 212px;
+    margin-top: 14px;
+  }  
+
+  .footer-info {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menu {
+    position: relative;
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu label {
+    cursor: pointer;
+  }
+
+  .mobile-menu img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .mobile-dropdown-menu {
+    display: none;
+  }
+
+  .mobile-menu input[type="checkbox"]:checked + .mobile-dropdown-menu {
+    display: block;
+    width: 140px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 4px 4px;
+  }
+
+  .mobile-dropdown-menu a {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 18px;
+    width: 100%;
+    color: #fff;
+  }
+  .mobile-dropdown-menu a:hover {
+    background: #fbd341;
+    color: #000;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+  }
+
+  .nav-menu-contact {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-right: 12px;
+    flex-direction: column;
+  }
+
+  .nav-menu-contact-item {
+    margin-right: 0;
+  }
+
+  .link-fb {
+    margin-right: 24px;
+  }
+
+  .our-tours {
+    text-align: center;
+  }
+
+  .slider-box {
+    margin: 0;
+    text-align: center;
+    padding: 14px;
+  }
+
+  .slider-img {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .slider-text {
+    padding-left: 0;
+  }
+
+  .our-advantages-name {
+    text-align: center;
+    margin: 0;
+  }
+
+  .advantages-container {
+    flex-direction: column;
+  }
+
+  .advantages-foto {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .advantages-text {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .form-name {
+    text-align: center;
+  }  
+
+  .form-column {
+    margin-bottom: 24px;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .footer-info {
+    width: 40%;
+  }
+
+  .footer-contact {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    margin-right: 16px;
+  }
+
+  .social-link {
+    margin-top: 4px;
+  }
+
+  .banner-slider-name {
+    line-height: 26px;
+  }
+
+  .banner-slider-name {
+    margin: 0 0 10px;
+    font-size: 24px;
+  }
+
+  .banner-slider-btn {
+    font-size: 16px;
+  }
+
+  .nav-menu-contact {
+    margin-right: 8px;
+  }
+
+  .our-tours-default {
+    margin-right: 0;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .slider-container {
+    padding: 40px 45px;
+  }
+
+  .slick-prev {
+    left: 12px;
+  }
+
+  .slick-next {
+    right: 12px;
+  }
+
+  .slider-price-default {
+    display: none;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-info {
+    width: 100%;
+  }
+
+  .footer-nav {
+    text-align: center;
+  }
+}
