@@ -203,14 +203,30 @@ a {
   display: none;
 }
 
-.our-tours {
-  font-size: 20px;
+.nav-tabs {
   margin: 70px 0 0;
+  list-style: none;
 }
 
-.our-tours-default {
+.nav-tabs li {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+.nav-tabs li.active {
   color: #fbd341;
-  margin-right: 32px;
+}
+
+.tabs-content .content-item{
+  display: none;
+}
+
+.tabs-content .content-item.active{
+  display: block;
 }
 
 .slider-container {
@@ -305,6 +321,12 @@ a {
 .advantages-text {
   width: 60%;
   padding: 54px 0 46px 90px;
+}
+
+.advantages-text-box {
+  height: 192px;
+  padding-right: 18px;
+  overflow: auto;
 }
 
 .form-bg {
@@ -455,6 +477,10 @@ a {
     padding: 0 12px;
   }
 
+  .nav-menu-contact {
+    padding-left: 0;
+  }
+
   .banner-slider-name {
     line-height: 34px;
   }
@@ -530,7 +556,7 @@ a {
 
   .mobile-menu input[type="checkbox"]:checked + .mobile-dropdown-menu {
     display: block;
-    width: 140px;
+    width: 200px;
     position: absolute;
     right: 0;
     top: 50px;
@@ -550,6 +576,25 @@ a {
     background: #fbd341;
     color: #000;
   }
+
+  .dropdown-submenu {
+    display: none;
+  }
+
+  .dropdown-menu:hover .dropdown-submenu {
+    display: block;
+    padding-left: 16px;
+  }
+
+  .dropdown-menu-link {
+    font-size: 14px;
+  }
+
+  .submenu {
+    top: 0px;
+    left: -187px;
+    padding: 8px 8px;
+  } 
 
   .nav-menu {
     flex-direction: row;
@@ -590,6 +635,10 @@ a {
     padding-left: 0;
   }
 
+  .our-advantages {
+    padding: 44px 0 44px;
+  }
+
   .our-advantages-name {
     text-align: center;
     margin: 0;
@@ -607,6 +656,10 @@ a {
   .advantages-text {
     width: 100%;
     padding: 0;
+  }
+
+  .advantages-text-box {
+    margin-top: 18px;
   }
   
   .form-name {
@@ -631,12 +684,8 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-  .logo {
-    margin-right: 16px;
-  }
-
-  .social-link {
-    margin-top: 4px;
+  .mobile-menu {
+    margin-top: 14px;
   }
 
   .banner-slider-name {
@@ -653,13 +702,12 @@ a {
   }
 
   .nav-menu-contact {
-    margin-right: 8px;
+    display: none;
   }
 
-  .our-tours-default {
-    margin-right: 0;
-    display: block;
+  .nav-tabs li {
     margin-bottom: 12px;
+    margin-right: 30px;
   }
 
   .slider-container {
@@ -679,14 +727,20 @@ a {
   }
 
   .footer-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .footer-info {
     width: 100%;
+    margin-top: 12px;
   }
 
   .footer-nav {
+    text-align: center;
+  }
+
+  .footer-contact {
+    display: block;
     text-align: center;
   }
 }
